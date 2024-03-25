@@ -325,6 +325,7 @@ header {
   align-items: center;
   max-width: 1280px;
   padding: 0 32px;
+  width: 100%;
 }
 
 .header__description {
@@ -341,7 +342,7 @@ header {
 
 .header__homepage--img {
   width: 100%;
-  min-width: none;
+  min-width: 0;
   max-width: 768px;
 }
 
@@ -360,7 +361,7 @@ header {
 }
 
 .header__input {
-  padding: 22px 192px 22px 32px;
+  padding: 22px 0 22px 32px;
   border: 2px solid rgb(232, 236, 241);
   font-weight: 500;
   font-size: 14px;
@@ -1417,7 +1418,7 @@ FOOTER
 
 /* 
 
-DESKTOPS
+DESKTOPS ------------------------------------------------------------
 
 */
 
@@ -1425,7 +1426,6 @@ DESKTOPS
   .header__title {
     font-size: 30px;
     text-align: center;
-    margin-top: -16px;
   }  
 
   .header__row {
@@ -1494,7 +1494,8 @@ DESKTOPS
   }
 
   .header__description {
-    margin: 0 188px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .header__customers--img {
@@ -1570,6 +1571,12 @@ DESKTOPS
     align-items: center;
   }
 
+  .pricing__personal,
+  .pricing__business,
+  .pricing__enterprise {
+    margin: 64px 0 0;
+  }
+
   .pricing__para {
     font-size: 16px;
   }
@@ -1579,6 +1586,16 @@ DESKTOPS
   TEST 
   
   */
+
+  .test__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .test__description {
+    width: 90%;
+  }
 
   .test__para {
     font-size: 16px;
@@ -1601,6 +1618,12 @@ DESKTOPS
 
   .questions__para {
     font-size: 16px;
+  }
+
+  .question {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 8px;
   }
 
   /* 
@@ -1645,7 +1668,7 @@ DESKTOPS
 
 /* 
 
-TABLETS 
+TABLETS -------------------------------------------------------------
 
 */
  
@@ -1658,7 +1681,12 @@ TABLETS
   */
 
   .header__description {
-    width: 512px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .header__customers--wrapper {
+    width: 100%;
   }
 
   .header__img {
@@ -1680,6 +1708,10 @@ TABLETS
     font-size: 14px;
   }
 
+  .features__subtitle {
+    text-align: center;
+  }
+
   .features__service--wrapper {
     display: flex;
     justify-content: center;
@@ -1698,6 +1730,7 @@ TABLETS
   .quality__row {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
   }
 
   .quality__description {
@@ -1711,8 +1744,7 @@ TABLETS
   }
 
   .quality__img--wrapper {
-    max-width: 512px;
-    margin-left: 100px;
+    width: 100%;
   }
 
   .quality__title,
@@ -1901,35 +1933,292 @@ TABLETS
     align-items: center;
     margin-top: 60px;
   }
-}
 
-/* 
+  /* 
+  
+  QUESTIONS 
+  
+  */
 
-MOBILE PHONES 
-
-*/
-
-@media (max-width: 576px) {
-  .header__getstarted {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    max-width: 448px;
+  .question {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 16px;
   }
 
-  .header__button {
-    position: relative;
-    min-width: 448px;
-    padding: 22px 0;
-    margin: 16px 8px 16px 0;
+  .feather {
+    min-width: 24px;
+    min-height: 24px;
+  }
+}
+
+/* 700 width ----------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+  .header__description {
+    min-width: 0px;
+    width: 100%;
   }
 
   .header__para {
     margin: 20px 0;
   }
 
-  .header__customers--wrapper {
-    width: 100%;
-    height: auto;
+  .header__row {
+    min-width: 0;
+    padding: 0;
   }
+
+  .features__subtitle {
+    font-size: 36px;
+  }
+
+  .feature__service {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature__description--wrapper {
+    margin: 16px 0 0 0;
+  }
+
+  .service__para {
+    margin: 4px 0 0;
+    min-width: 336px;
+    text-align: center;
+  }
+
+  .steps__list--description {
+    margin: 0;
+  }
+
+  .steps__list--number {
+    margin: 0 0 8px 0;
+  }
+
+  .values__description {
+    margin: 0;
+    padding: 0;
+  }
+
+  .values__subtitle {
+    font-size: 30px;
+  }
+
+  .values__para {
+    width: 100%;
+  }
+
+  .pricing__subtitle {
+    font-size: 36px;
+  }
+
+  .price__subtitle {
+    font-size: 36px;
+  }
+
+  .price__subtitle2 {
+    font-size: 36px;
+  }
+
+  .test__img {
+    min-width: 0;
+    max-width: 448px;
+  }
+
+  .test__description {
+    min-width: 448px;
+    max-width: 100%;
+  
+  }
+
+  .test__subtitle {
+    font-size: 30px;
+  }
+
+  .questions__subtitle {
+    font-size: 36px;
+  }
+
+  .questions__para {
+    font-size: 14px;
+  }
+
+  .footer__description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -48px 0 0;
+  }
+
+  .footer__links {
+    margin-top: 48px;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .footer__logo--img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer__final {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__copyright,
+  .footer__socials {
+    margin-top: 32px;
+  }
+
+  /* 
+  
+  QEUSTIONS 
+  
+  */
+
+  .question {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 16px;
+  }
+
+  .feather {
+    min-width: 24px;
+    min-height: 24px;
+  }
+}
+
+/* 
+
+MOBILE PHONES -------------------------------------------------------
+
+*/
+
+@media (max-width: 576px) {
+
+  .header__getstarted {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 448px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .header__button {
+    position: relative;
+    max-width: 448px;
+    width: 100%;
+    padding: 22px 0;
+    margin: 16px 8px;
+  }
+
+  .header__row {
+    padding: 0;
+  }
+
+  .header__img {
+    min-width: 0;
+    margin: 0;
+  }
+
+  .steps__subtitle {
+    min-width: 0;
+    text-align: center;
+    margin: 0;
+  }
+
+  .values__img,
+  .values__subtitle,
+  .values__para {
+    min-width: 0;
+  }
+
+  .values__subtitle {
+    width: 100%;
+  }
+
+  .values__description {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .test__description {
+    min-width: 0;
+  }
+
+  .test__row {
+   width: 100%;
+  }
+
+  .ratings__person--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ratings__img {
+    margin: 0;
+  }
+
+  .ratings__person__img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .ratings__person {
+    margin-top: 8px;
+  }
+
+  .mobile__phones--all {
+    text-align: center;
+  }
+
+  .question {
+    font-size: 14px;
+  }
+
+  .banner__button--wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner__button2 {
+    margin: 16px 0 0;
+    font-size: 14px;
+  }
+
+  .banner__button1 {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .banner__title {
+    font-size: 24px;
+  }
+
+  .banner__line {
+    padding: 48px 32px;
+  }
+
+
+}
+
+/* 
+
+SMALLER MOBILE PHONES ---------------------------------------------------------
+
+*/
+
+@media (max-width: 430px) {
+
 }
