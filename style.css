@@ -261,6 +261,7 @@ NAV
 .nav__title {
   color: #243E63;
   font-size: 24px;
+  font-weight: 900;
 }
 
 .nav__links {
@@ -333,8 +334,11 @@ header {
   width: 50%;
 }
 
+.header__title {
+  font-size: 48px;
+}
+
 .header__img {
-  margin-left: 96px;
   display: flex;
   align-items: center;
   max-width: 768px;
@@ -347,9 +351,10 @@ header {
 }
 
 .header__para {
-  font-size: 16px;
+  font-size: 18px;
   color: #243E63;
   margin: 32px 0;
+  line-height: 1.5;
 }
 
 .header__getstarted {
@@ -417,7 +422,7 @@ FEATURES
 
 .features__container {
   position: relative;
-  padding: 95px 0;
+  padding: 96px 0;
 }
 
 .features__row {
@@ -677,7 +682,7 @@ VALUES
 }
 
 .values__description {
-  width: 50%;
+  width: 40%;
 }
 
 .values__title {
@@ -771,6 +776,7 @@ VALUES
   display: flex;
   align-items: center;
   width: 50%;
+  padding-left: 80px;
 }
 
 /* 
@@ -1502,10 +1508,6 @@ DESKTOPS ------------------------------------------------------------
     padding: 0;
   }
 
-  .header__img {
-    margin-right: 60px;
-  }
-
   /* FEATURES */
 
   .features__container {
@@ -1680,6 +1682,10 @@ TABLETS -------------------------------------------------------------
   
   */
 
+  .header__container {
+    padding: 80px 0;
+  }
+
   .header__description {
     margin-right: auto;
     margin-left: auto;
@@ -1695,7 +1701,6 @@ TABLETS -------------------------------------------------------------
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 60px;
   }
 
   /* 
@@ -1703,6 +1708,10 @@ TABLETS -------------------------------------------------------------
   FEATURES 
   
   */
+
+  .features__container {
+    padding: 80px 0;
+  }
 
   .features__para {
     font-size: 14px;
@@ -1720,12 +1729,17 @@ TABLETS -------------------------------------------------------------
   .feature__service {
     width: 80%;
   }
+  
 
   /* 
   
   QUALITY 
   
   */
+
+  .quality__container {
+    padding: 80px 0;
+  }
 
   .quality__row {
     display: flex;
@@ -1765,6 +1779,10 @@ TABLETS -------------------------------------------------------------
   }
 
   /* STEPS */
+
+  .steps__container {
+    padding: 80px 0;
+  }
 
   .steps__row {
     display: flex;
@@ -1820,9 +1838,14 @@ TABLETS -------------------------------------------------------------
   
   */
 
+  .values__container {
+    padding: 80px 0;
+  }
+
   .values__img {
     width: 60%;
     min-width: 448px;
+    padding: 0;
   }
 
   .values__row {
@@ -1891,6 +1914,10 @@ TABLETS -------------------------------------------------------------
   
   */
 
+  .pricing__container {
+    padding: 80px 0;
+  }
+
   .pricing__subtitle {
     text-align: center;
   }
@@ -1905,6 +1932,10 @@ TABLETS -------------------------------------------------------------
   TEST 
   
   */
+
+  .test__container {
+    padding: 80px 0;
+  }
 
   .test__row {
     display: flex;
@@ -1940,6 +1971,10 @@ TABLETS -------------------------------------------------------------
   
   */
 
+  .questions__container {
+    padding: 80px 0;
+  }
+
   .question {
     font-size: 18px;
     font-weight: 500;
@@ -1949,6 +1984,16 @@ TABLETS -------------------------------------------------------------
   .feather {
     min-width: 24px;
     min-height: 24px;
+  }
+
+  /* 
+  
+  BANNER 
+  
+  */
+
+  .banner__container {
+    padding: 80px 0;
   }
 }
 
@@ -2128,10 +2173,15 @@ MOBILE PHONES -------------------------------------------------------
     margin: 0;
   }
 
+  .quality__subtitle {
+    font-size: 30px;
+  }
+
   .steps__subtitle {
     min-width: 0;
     text-align: center;
     margin: 0;
+    font-size: 30px;
   }
 
   .values__img,
